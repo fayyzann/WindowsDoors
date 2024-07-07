@@ -11,21 +11,26 @@ function About() {
       className="min-h-screen font-[Barlow] bg-[#e0ffd7] bg-cover bg-fixed"
       style={{ backgroundImage: `url(${pageBg})` }}
     >
-      <div className="h-fit" style={{ backgroundImage: `url(${img1})` }}>
+      <div
+        className="h-fit bg-cover bg-center"
+        style={{ backgroundImage: `url(${img1})` }}
+      >
         <div className="bg-[#4F7942] bg-opacity-60 flex-col">
           <Navbar />
-          <div className="flex items-start justify-between px-16 mt-24">
-            <h1 className="text-white w-8/12 text-[5.2rem] font-bold">About</h1>
-            <div className="w-1/3 left-10 bg-[#4F7942] text-white p-10 mt-36">
+          <div className="md:flex items-start justify-between px-10 md:px-16 mt-14">
+            <h1 className="text-white text-center md:text-start w-full md:w-8/12 text-5xl md:text-[5.2rem] font-bold">
+              About
+            </h1>
+            <div className="w-full md:w-1/3 left-10 bg-[#4F7942] text-white p-5 md:p-10 mt-10 md:mt-36 text-center md:text-start">
               <p className="text-lg font-bold mb-4">Toll Free Call</p>
               <p className="text-3xl font-bold">+1 910-626-85255</p>
             </div>
           </div>
         </div>
       </div>
-      <div className=" h-screen bg-inherit px-16 flex items-center justify-between">
-        <div className="w-7/12 ps-16">
-          <p className="text-4xl font-bold mb-12">Who We Are</p>
+      <div className="min-h-fit bg-inherit px-10 md:px-16 flex flex-col-reverse md:flex-row items-center justify-between ">
+        <div className="w-full md:w-7/12 md:ps-16">
+          <p className="text-4xl font-bold mb-6 md:mb-12">Who We Are</p>
           <p className="text-lg font-normal mb-4">
             Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
             amet mauris.
@@ -51,15 +56,15 @@ function About() {
         <img
           src={img2}
           alt="window-banner-01"
-          className="w-1/3 h-full object-cover"
+          className="w-full md:w-1/3 h-full object-cover mb-10 md:mb-0"
         />
       </div>
-      <div className="bg-[#4F7942] bg-opacity-60 px-20 py-28 flex items-end justify-end">
-        <div className="flex-col items-end justify-end w-1/2">
-          <p className="text-5xl font-bold text-white mb-10">
+      <div className="bg-[#4F7942] bg-opacity-60 min-h-fit px-10 md:px-20 py-10 md:py-28 flex md:items-end md:justify-end">
+        <div className="flex-col items-end justify-end w-full md:w-1/2">
+          <p className="text-4xl md:text-5xl font-bold text-white mb-10">
             Sleep in Absolute Peace Wake up to Bright Sunshine
           </p>
-          <p className="text-lg text-white mb-10">
+          <p className="md:text-lg text-white mb-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
@@ -68,14 +73,14 @@ function About() {
           </button>
         </div>
       </div>
-      <div className="py-20 bg-inherit">
-        <div className="flex-col px-16">
-          <div className="flex items-center justify-between mb-12">
-            <h2 className="w-1/3 text-4xl text-gray-800 font-bold">
+      <div className="py-10 md:py-20 bg-inherit">
+        <div className="flex-col px-10 md:px-16">
+          <div className="flex flex-col md:flex-row items-center justify-between mb-12">
+            <h2 className="w-full md:w-1/3 text-center text-4xl text-gray-800 font-bold mb-10 md:mb-0">
               Numbers Speak for Themselves
             </h2>
 
-            <div className="w-1/2 flex bg-white justify-center space-x-12 py-12">
+            <div className="w-full md:w-1/2 flex flex-col md:flex-row bg-white items-center justify-center space-y-12 md:space-y-0 md:space-x-12 py-12">
               <div className="text-center">
                 <p className="text-6xl text-gray-700 font-bold">200+</p>
                 <p className="text-gray-600">Satisfied Clients</p>

@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../Components/navbar";
 import Footer from "../../Components/footer";
-import {
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-} from "@mui/material";
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import bgImg from "../../Assets/window-morning-view.jpg";
 import img1 from "../../Assets/faq-questions.jpg";
@@ -28,18 +24,20 @@ function Faq() {
       >
         <div className="bg-[#4F7942] bg-opacity-60 flex-col">
           <Navbar />
-          <div className="flex items-start justify-between px-16 mt-24">
-            <h1 className="text-white w-8/12 text-[5.2rem] font-bold">FAQ's</h1>
-            <div className="w-1/3 left-10 bg-[#4F7942] text-white p-10 mt-36">
+          <div className="md:flex items-start justify-between px-10 md:px-16 mt-14">
+            <h1 className="text-white text-center md:text-start w-full md:w-8/12 text-5xl md:text-[5.2rem] font-bold">
+              FAQ's
+            </h1>
+            <div className="w-full md:w-1/3 left-10 bg-[#4F7942] text-white p-5 md:p-10 mt-10 md:mt-36 text-center md:text-start">
               <p className="text-lg font-bold mb-4">Toll Free Call</p>
               <p className="text-3xl font-bold">+1 910-626-85255</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="min-h-fit w-full px-16 flex items-start justify-end">
-        <div className="w-2/3 min-h-fit p-20 bg-white flex-col items-center justify-center">
-          <p className="text-4xl text-gray-800 mb-10 font-bold">
+      <div className="min-h-fit w-full px-10 md:px-16 flex md:items-start md:justify-end">
+        <div className="w-full md:w-2/3 min-h-fit p-5 md:p-20 bg-white flex-col items-center justify-center">
+          <p className="text-3xl md:text-4xl text-center text-gray-800 mb-10 font-bold">
             Frequently Asked Questions
           </p>
           <Accordion
@@ -164,12 +162,12 @@ function Faq() {
         className="h-fit bg-cover bg-center"
         style={{ backgroundImage: `url(${img2})` }}
       >
-        <div className="bg-[#4F7942] bg-opacity-30 px-20 py-28">
-          <div className="flex-col items-start justify-start w-7/12 last:">
-            <p className="text-5xl font-bold text-white mb-10">
+        <div className="bg-[#4F7942] bg-opacity-60 min-h-fit px-10 md:px-20 py-10 md:py-28 flex md:items-end md:justify-end">
+          <div className="flex-col items-start justify-start w-full md:w-7/12">
+            <p className="text-4xl md:text-5xl font-bold text-white mb-10">
               Sleep in Absolute Peace Wake up to Bright Sunshine
             </p>
-            <p className="text-lg text-white mb-10">
+            <p className="md:text-lg text-white mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>

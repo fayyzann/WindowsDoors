@@ -19,26 +19,27 @@ function Home() {
         className="h-fit bg-cover bg-center"
         style={{ backgroundImage: `url(${img1})` }}
       >
-        <div className="bg-[#4F7942] bg-opacity-30 flex-col">
+        <div className="bg-[#4F7942] bg-opacity-40 flex-col">
           <Navbar />
-          <div className="flex items-start justify-between px-20 mt-14">
-            <div className="text-white w-8/12">
+          <div className="md:flex items-start justify-between px-10 md:px-20 mt-14">
+            <div className="text-white w-full md:w-3/5">
               <h2 className="text-2xl font-bold mb-10">
                 J’a Door - More than Enough Choices
               </h2>
-              <h1 className="text-[5.2rem] font-bold">The Right Windows</h1>
-              <h1 className="text-[5.2rem] font-bold mb-10">& Doors For You</h1>
-              <p className="font-base mb-24 w-11/12">
+              <h1 className="text-5xl md:text-[5.2rem] font-bold mb-10 md:mb-20">
+                The Right Windows & Doors For You
+              </h1>
+              <p className="font-base mb-10 md:mb-24 w-11/12">
                 Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat
                 ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
                 nibh vulputate cursus a sit amet mauris.
               </p>
-              <button className="bg-[#4F7942] text-white px-10 py-3 rounded-full">
+              <button className="bg-[#4F7942] text-white px-10 py-3 rounded-full mb-10 md:mb-0">
                 Get Free Estimate
               </button>
             </div>
-            <div className="w-1/3">
+            <div className="w-full md:w-1/3">
               <form className="bg-white p-8 space-y-6">
                 <h3 className="text-xl font-semibold mb-6">Make an Enquiry</h3>
                 <div className="mb-4">
@@ -78,7 +79,7 @@ function Home() {
                 </div>
                 <button
                   type="submit"
-                  className="bg-[#4F7942] self-start text-white px-6 py-3 rounded-full w-1/2"
+                  className="bg-[#4F7942] self-start text-white px-6 py-3 rounded-full md:w-1/2"
                 >
                   Send Message
                 </button>
@@ -91,8 +92,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className=" h-screen px-20 mb-20 flex items-center justify-between">
-        <div className="w-7/12 ps-16">
+      <div className="min-h-fit px-10 md:px-20 mb-20 flex md:flex-row flex-col-reverse items-center justify-between">
+        <div className="w-full md:w-7/12 ps-4 md:ps-16 ">
           <p className="text-4xl font-bold mb-12">About Us</p>
           <p className="text-2xl font-bold mb-10">
             Morbi Accumsan Ipsum Velit. Nam Nec Tellus a Odio Tincidunt Auctor
@@ -111,19 +112,19 @@ function Home() {
         <img
           src={img2}
           alt="window-banner-01"
-          className="w-1/3 h-full object-cover"
+          className="w-full md:w-1/3 h-full object-cover mb-20 md:mb-0"
         />
       </div>
       <div
-        className="h-fit bg-cover bg-center mb-20"
+        className="md:h-fit bg-cover bg-center mb-20"
         style={{ backgroundImage: `url(${img3})` }}
       >
-        <div className="bg-[#4F7942] bg-opacity-30 px-20 py-28">
-          <div className="flex-col items-start justify-start w-7/12 last:">
-            <p className="text-5xl font-bold text-white mb-10">
+        <div className="bg-[#4F7942] bg-opacity-40 px-10 md:px-20 py-10 md:py-28">
+          <div className="flex-col items-start justify-start w-full md:w-7/12 ">
+            <p className="text-3xl md:text-5xl font-bold text-white mb-10">
               Sleep in Absolute Peace Wake up to Bright Sunshine
             </p>
-            <p className="text-lg text-white mb-10">
+            <p className="md:text-lg text-white mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
@@ -133,13 +134,13 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="px-10 mb-52 flex flex-col items-center justify-center">
+      <div className="px-10 mb-32 md:mb-52 flex flex-col items-center justify-center">
         <p className="text-4xl font-bold text-center mb-8">Services</p>
-        <p className="text-lg mb-20 text-center w-1/2">
+        <p className="text-lg mb-20 text-center w-full md:w-1/2">
           Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
           lorem quis bibendum auctor, nisi elit consequat ipsum.
         </p>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
           <div className="bg-[#e0ffd7] text-black rounded-2xl shadow-lg">
             <img
               src={entDoor}
@@ -214,19 +215,19 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="h-fit px-20 flex items-center justify-between">
+      <div className="h-fit px-10 md:px-20 flex flex-col md:flex-row items-center justify-between mb-10 md:mb-0">
         <img
           src={custImg}
           alt="window-banner-01"
-          className="w-1/3 h-fit object-fit"
+          className="w-full md:w-1/3 h-fit object-fit mb-14 md:mb-0"
         />
-        <div className="w-7/12 ps-16">
-          <p className="text-5xl font-bold mb-8">Happy Customers</p>
-          <p className="text-lg mb-10">
+        <div className="w-full md:w-7/12 md:ps-16">
+          <p className="text-4xl md:text-5xl font-bold mb-8 text-center">Happy Customers</p>
+          <p className="md:text-lg mb-10 text-center">
             Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
             lorem quis bibendum auctor, nisi elit consequat ipsum.
           </p>
-          <div className="space-y-10">
+          <div className="space-y-5 md:space-y-10">
             <div className="bg-[#e0ffd7] p-8 rounded-2xl shadow-lg">
               <p className="text-xl mb-4">
                 "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -253,12 +254,12 @@ function Home() {
         className="h-fit bg-cover bg-center"
         style={{ backgroundImage: `url(${img4})` }}
       >
-        <div className="bg-[#4F7942] bg-opacity-30 px-20 py-28">
-          <div className="flex-col items-start justify-start w-7/12 last:">
-            <p className="text-5xl font-bold text-white mb-10">
+        <div className="bg-[#4F7942] bg-opacity-40 px-10 md:px-20 py-14 md:py-28">
+          <div className="flex-col items-start justify-start w-full md:w-7/12">
+            <p className="text-4xl md:text-5xl font-bold text-white mb-10">
               Sleep in Absolute Peace Wake up to Bright Sunshine
             </p>
-            <p className="text-lg text-white mb-10">
+            <p className="md:text-lg text-white mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>

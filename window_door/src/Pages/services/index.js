@@ -23,31 +23,31 @@ function Services() {
       >
         <div className="bg-[#4F7942] bg-opacity-60 flex-col">
           <Navbar />
-          <div className="flex items-start justify-between px-16 mt-24">
-            <h1 className="text-white w-8/12 text-[5.2rem] font-bold">
+          <div className="md:flex items-start justify-between px-10 md:px-16 mt-14">
+            <h1 className="text-white text-center md:text-start w-full md:w-8/12 text-5xl md:text-[5.2rem] font-bold">
               Services
             </h1>
-            <div className="w-1/3 left-10 bg-[#4F7942] text-white p-10 mt-36">
+            <div className="w-full md:w-1/3 left-10 bg-[#4F7942] text-white p-5 md:p-10 mt-10 md:mt-36 text-center md:text-start">
               <p className="text-lg font-bold mb-4">Toll Free Call</p>
               <p className="text-3xl font-bold">+1 910-626-85255</p>
             </div>
           </div>
         </div>
       </div>
-      <div className=" min-h-screen bg-inherit mb-20 px-16 flex items-center justify-between">
-        <div className="w-7/12 flex items-start">
-          <div className="flex-col w-1/2">
-            <p className="text-xl font-bold mb-12">Services</p>
-            <p className="text-4xl font-bold mb-4">
+      <div className=" min-h-fit bg-inherit px-10 md:px-16 flex flex-col-reverse md:flex-row items-center justify-between ">
+        <div className="w-full md:w-7/12 flex flex-col-reverse md:flex-row items-start">
+          <div className="flex-col w-full md:w-1/2">
+            <p className="text-xl font-bold mb-4 *:md:mb-12">Services</p>
+            <p className="text-3xl md:text-4xl font-bold mb-4">
               Let It Be Any Door or Window Work, We Are Here to Help!!
             </p>
-            <p className="text-lg font-normal mb-2">
+            <p className="md:text-lg font-normal mb-2">
               I am text block. Click edit button to change this text. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
               luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
           </div>
-          <div className="font-[Barlow] w-1/2 ps-10">
+          <div className="font-[Barlow] w-full md:w-1/2 md:ps-10 mb-10 md:mb-0">
             <Accordion>
               <AccordionSummary
                 expandIcon={<ArrowDropDownIcon />}
@@ -113,17 +113,17 @@ function Services() {
         <img
           src={img2}
           alt="window-banner-01"
-          className="w-1/3 h-full object-cover"
+          className="w-full md:w-1/3 h-full object-cover mb-10 md:mb-0"
         />
       </div>
-      <div className="p-16 space-y-10">
-        <div className="flex">
+      <div className="p-10 md:p-16 md:space-y-10">
+        <div className="flex flex-col md:flex-row">
           <img
             src={entDoor}
             alt="entrance-door"
-            className="w-1/4 h-fit object-cover"
+            className="w-full md:w-1/4 h-fit object-cover mb-5 md:mb-0"
           />
-          <div className="w-1/2 px-10 flex-col items-center justify-center ">
+          <div className="w-full md:w-1/2 md:px-10 flex-col items-center justify-center ">
             <p className="text-3xl text-gray-800 font-bold mb-5">
               Entrance Doors
             </p>
@@ -136,13 +136,13 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <img
             src={slideDoor}
             alt="slide-door"
-            className="w-1/4 h-fit object-cover"
+            className="w-full md:w-1/4 h-fit object-cover mb-5 md:mb-0"
           />
-          <div className="w-1/2 px-10 flex-col items-center justify-center ">
+          <div className="w-full md:w-1/2 md:px-10 flex-col items-center justify-center ">
             <p className="text-3xl text-gray-800 font-bold mb-5">
               Sliding Doors
             </p>
@@ -155,13 +155,13 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <img
             src={garDoor}
             alt="garage-door"
-            className="w-1/4 h-fit object-cover"
+            className="w-full md:w-1/4 h-fit object-cover mb-5 md:mb-0"
           />
-          <div className="w-1/2 px-10 flex-col items-center justify-center ">
+          <div className="w-full md:w-1/2 md:px-10 flex-col items-center justify-center ">
             <p className="text-3xl text-gray-800 font-bold mb-5">
               Garage Doors
             </p>
@@ -174,13 +174,13 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <img
             src={winFrames}
             alt="windows and frames"
-            className="w-1/4 h-fit object-cover"
+            className="w-full md:w-1/4 h-fit object-cover mb-5 md:mb-0"
           />
-          <div className="w-1/2 px-10 flex-col items-center justify-center ">
+          <div className="w-full md:w-1/2 md:px-10 flex-col items-center justify-center ">
             <p className="text-3xl text-gray-800 font-bold mb-5">
               Windows & Frames
             </p>
@@ -193,13 +193,13 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <img
             src={installImg}
             alt="installation"
-            className="w-1/4 h-fit object-cover"
+            className="w-full md:w-1/4 h-fit object-cover mb-5 md:mb-0"
           />
-          <div className="w-1/2 px-10 flex-col items-center justify-center ">
+          <div className="-full md:w-1/2 md:px-10 flex-col items-center justify-center ">
             <p className="text-3xl text-gray-800 font-bold mb-5">
               Installation
             </p>
@@ -217,12 +217,12 @@ function Services() {
         className="h-fit bg-cover bg-center"
         style={{ backgroundImage: `url(${img3})` }}
       >
-        <div className="bg-[#4F7942] bg-opacity-30 px-20 py-28">
-          <div className="flex-col items-start justify-start w-7/12 last:">
-            <p className="text-5xl font-bold text-white mb-10">
+        <div className="bg-[#4F7942] bg-opacity-60 min-h-fit px-10 md:px-20 py-10 md:py-28 flex md:items-end md:justify-end">
+          <div className="flex-col items-start justify-start w-full md:w-7/12">
+            <p className="text-4xl md:text-5xl font-bold text-white mb-10">
               Sleep in Absolute Peace Wake up to Bright Sunshine
             </p>
-            <p className="text-lg text-white mb-10">
+            <p className="md:text-lg text-white mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>

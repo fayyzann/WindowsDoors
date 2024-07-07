@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <header className="z-10 font-[Barlow] w-full">
-      <nav className="bg-white md:bg-transparent flex items-center justify-between px-8 md:px-16 py-4">
+      <nav className="bg-white md:bg-transparent flex items-center justify-between px-8 md:px-16 py-4 relative">
         <img
           src={logo}
           alt="Logo"
@@ -99,65 +99,65 @@ function Navbar() {
             </NavLink>
           </li>
         </ul>
+        {isMenuOpen && (
+          <ul className="bg-white flex flex-col items-start space-y-4 py-4 px-4 md:hidden absolute top-full left-0 w-full text-lg z-20">
+            <li>
+              <NavLink
+                to="/"
+                className="text-[#4F7942] hover:text-[#3c5c32]"
+                onClick={toggleMenu}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className="text-[#4F7942] hover:text-[#3c5c32]"
+                onClick={toggleMenu}
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/services"
+                className="text-[#4F7942] hover:text-[#3c5c32]"
+                onClick={toggleMenu}
+              >
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/portfolio"
+                className="text-[#4F7942] hover:text-[#3c5c32]"
+                onClick={toggleMenu}
+              >
+                Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/faqs"
+                className="text-[#4F7942] hover:text-[#3c5c32]"
+                onClick={toggleMenu}
+              >
+                FAQ's
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className="text-[#4F7942] hover:text-[#3c5c32]"
+                onClick={toggleMenu}
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        )}
       </nav>
-      {isMenuOpen && (
-        <ul className="bg-white flex flex-col items-start space-y-4 py-4 px-4 md:hidden absolute w-full top-full left-0 text-lg">
-          <li>
-            <NavLink
-              to="/"
-              className="text-[#4F7942] hover:text-[#3c5c32]"
-              onClick={toggleMenu}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              className="text-[#4F7942] hover:text-[#3c5c32]"
-              onClick={toggleMenu}
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/services"
-              className="text-[#4F7942] hover:text-[#3c5c32]"
-              onClick={toggleMenu}
-            >
-              Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/portfolio"
-              className="text-[#4F7942] hover:text-[#3c5c32]"
-              onClick={toggleMenu}
-            >
-              Portfolio
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/faqs"
-              className="text-[#4F7942] hover:text-[#3c5c32]"
-              onClick={toggleMenu}
-            >
-              FAQ's
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className="text-[#4F7942] hover:text-[#3c5c32]"
-              onClick={toggleMenu}
-            >
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      )}
     </header>
   );
 }

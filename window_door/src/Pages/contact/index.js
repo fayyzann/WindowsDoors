@@ -22,17 +22,17 @@ function Contact() {
       >
         <div className="bg-[#4F7942] bg-opacity-60 flex-col">
           <Navbar />
-          <div className="flex items-start justify-between px-16 mt-24">
-            <h1 className="text-white w-8/12 text-[5.2rem] font-bold">FAQ's</h1>
-            <div className="w-1/3 left-10 bg-[#4F7942] text-white p-10 mt-36">
+          <div className="md:flex items-start justify-between px-10 md:px-16 mt-14">
+            <h1 className="text-white text-center md:text-start w-full md:w-8/12 text-5xl md:text-[5.2rem] font-bold">Contact</h1>
+            <div className="w-full md:w-1/3 left-10 bg-[#4F7942] text-white p-5 md:p-10 mt-10 md:mt-36 text-center md:text-start">
               <p className="text-lg font-bold mb-4">Toll Free Call</p>
               <p className="text-3xl font-bold">+1 910-626-85255</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex px-16 justify-between items-center">
-        <div className="w-1/2 p-4">
+      <div className="flex flex-col-reverse md:flex-row px-10 md:px-16 justify-between items-center">
+        <div className="w-full md:w-1/2 p-4">
           <p className="text-4xl text-gray-800 mb-10 font-bold">Contact Us</p>
           <p className="text-lg text-gray-800 mb-20">
             Sed non mauris vitae erat consequat auctor eu in elit class aptent
@@ -99,7 +99,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-1/3 ">
+        <div className="w-full md:w-1/3 ">
           <form className="bg-[#395830] p-8 space-y-6">
             <h3 className="text-2xl text-white font-semibold mb-6">Make an Enquiry</h3>
             <div className="mb-4">
@@ -139,7 +139,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="bg-[#4F7942] self-start text-white px-6 py-3 rounded-full w-1/2"
+              className="bg-[#4F7942] self-start text-white px-6 py-3 rounded-full md:w-1/2"
             >
               Send Message
             </button>
